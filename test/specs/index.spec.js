@@ -1,5 +1,7 @@
 import { Wix } from '../../src/index';
-const version = require("json!../../package.json").version;
+/* eslint-disable */
+const version = require('json!../../package.json').version;
+/* eslint-enable */
 
 describe('Wix Global SDK', () => {
   it('should expose a namespace object \'Wix\' on the global scope ', () => {
@@ -18,7 +20,7 @@ describe('Wix Global SDK', () => {
     expect(Wix.version).to.be.a('string');
   });
 
-  it('should be decorated with the correct version number, '+version, () => {
+  it(`should be decorated with the correct version number, ${version}`, () => {
     expect(Wix.version).to.equal(version);
   });
 });
