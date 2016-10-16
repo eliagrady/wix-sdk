@@ -1,0 +1,60 @@
+{
+  "name": "wix-sdk",
+  "version": "1.67.0",
+  "description": "Wix\'s App Market SDK module for third party applications",
+  "main": "dist/wix-sdk.min.js",
+  "author": {
+    "name": "Elia Grady",
+    "email": "admin@eliagrady.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode=build",
+    "dev": "webpack --progress --colors --watch --mode=dev",
+    "test": "karma start karma.conf.js --single-run",
+    "test:watch": "karma start karma.conf.js --auto-watch --no-single-run",
+    "check-cover": "open coverage/lcov-report/index.html",
+    "eslint": "eslint . --ext .js",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "babel-core": "6.17.0",
+    "babel-eslint": "7.0.0",
+    "babel-loader": "6.2.5",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-preset-es2015": "6.16.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-loader": "1.5.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.0.1",
+    "eslint-plugin-react": "^6.0.0",
+    "isparta": "^4.0.0",
+    "isparta-loader": "^2.0.0",
+    "karma": "^1.3.0",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-coverage": "^1.1.1",
+    "karma-mocha": "^1.1.1",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-sinon-chai": "^1.2.4",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.26",
+    "karma-webpack": "^1.8.0",
+    "mocha": "3.1.2",
+    "phantomjs-prebuilt": "^2.1.3",
+    "pkginfo": "^0.4.0",
+    "pre-commit": "^1.1.3",
+    "sinon": "^1.17.6",
+    "sinon-chai": "^2.8.0",
+    "webpack": "1.13.2",
+    "webpack-merge": "^0.14.1",
+    "yargs": "6.0.0"
+  },
+  "pre-commit": [
+    "eslint"
+  ],
+  "dependencies": {
+    "json-loader": "^0.5.4"
+  }
+}
