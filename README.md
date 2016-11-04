@@ -13,5 +13,5 @@ the Wix SDK script as an (importable) object reference.
 ### Example:
 ```javascript
 import Wix from 'Wix';
-Wix.Features.isSupported(Wix.Features.Types.RESIZE_COMPONENT, function (data){console.log(data)})
+Wix.Features.isSupported(Wix.Features.Types.RESIZE_COMPONENT, function (data){console.log(data)});
 ```
