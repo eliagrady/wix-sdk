@@ -12,7 +12,7 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:eliagrady/wix-sdk"
-  }
+  },
   "scripts": {
     "build": "webpack --mode=build",
     "dev": "webpack --progress --colors --watch --mode=dev",
