@@ -11,5 +11,7 @@ It only exposes the global 'Wix' variable that is available after loading
 the Wix SDK script as an (importable) object reference.
 
 ### Example:
-`import Wix from 'Wix';`
-`Wix.Features.isSupported(Wix.Features.Types.RESIZE_COMPONENT, function (data){console.log(data)})`
+```javascript
+import Wix from 'Wix';
+Wix.Features.isSupported(Wix.Features.Types.RESIZE_COMPONENT, function (data){console.log(data)})
+```
