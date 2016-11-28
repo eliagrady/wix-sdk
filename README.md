@@ -12,7 +12,7 @@ If you're using an npm-centric client build, you might want to use an
 It only exposes the global 'Wix' variable that is available after loading 
 the Wix SDK script as an (importable) object reference.
 
-## Code example 
+## Code example
 ```js
 import Wix from 'wix-sdk';
 
