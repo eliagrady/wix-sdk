@@ -1,6 +1,6 @@
 {
   "name": "wix-sdk",
-  "version": "1.69.0",
+  "version": "1.74.0",
   "description": "Wix`s App Market SDK module for 3rd-party applications",
   "main": "dist/wix.min.js",
   "author": {
