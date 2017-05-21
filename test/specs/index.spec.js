@@ -1,3 +1,4 @@
+import mock from '../mock';
 import { Wix } from '../../src/index';
 /* eslint-disable */
 const version = require('json!../../package.json').version;
@@ -16,11 +17,8 @@ describe('Wix Global SDK', () => {
     expect(window.Wix).to.deep.equal(Wix);
   });
 
-  it('should be decorated with a version number', () => {
-    expect(Wix.version).to.be.a('string');
-  });
-
   it(`should be decorated with the correct version number, ${version}`, () => {
-    expect(Wix.version).to.equal(version);
+    const WixSdkVersion = JSON.parse(mock.firstCall.args[0]).version;
+    expect(WixSdkVersion).to.equal(version);
   });
 });
