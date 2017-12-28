@@ -2,7 +2,7 @@ const path    = require('path');
 const env     = require('yargs').argv.mode;
 const webpack = require('webpack');
 
-const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+const { UglifyJsPlugin } = webpack.optimize;
 
 const libraryName = 'wix';
 
