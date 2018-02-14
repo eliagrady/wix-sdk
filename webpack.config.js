@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 const { UglifyJsPlugin } = webpack.optimize;
 
-const libraryName = 'wix';
+const libraryName = 'Wix';
 
 const plugins = [];
 let outputFile;
