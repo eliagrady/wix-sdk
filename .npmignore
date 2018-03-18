@@ -1,1 +1,6 @@
 src
+lib
+test
+coverage
+*.*
+!types.d.ts
